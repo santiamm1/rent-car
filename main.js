@@ -64,7 +64,8 @@ for (let modelo of vehiculos) {
     contenido += "<div class='col-3 m-4 d-flex justify-content-center'>";
     contenido += "<div class='card border border-primary'>";
     contenido += "<div><h4 id='modelo_auto" + i + "' class='text-center text-primary fw-bold'>" + modelo.nombre + "</h4></div>";
-    contenido += "<img id='modelo_imagen" + i + "' src='./assets/img/autos/'" + modelo.imagen + "' class='card-img-top' alt='autos-seleccionados'>";
+    contenido += "<img id='modelo_imagen" + i + "' src='./assets/img/autos/" + modelo.imagen + "' class='card-img-top' alt='autos-seleccionados'>";
+ /*    "<img src='./assets/img/autos/" + datos.imagen + "' widht='180'>"; */
     contenido += "<div class='card-body'>";
     contenido += "<div class='row'>";
     contenido += "<div class='col-12'><p class='p-1 text-center text-secondary'>El precio por día es de: " +modelo.precio+"</p></div>";
