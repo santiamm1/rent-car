@@ -281,7 +281,7 @@ section {
 }
 
 .oferta {
-  background-image: url(./assets/img/offert.jpeg);
+  background-image: url("./assets/img/offert.jpeg");
   padding:100px 5px 100px 5px;
   display: flex;
   flex-direction: column;
