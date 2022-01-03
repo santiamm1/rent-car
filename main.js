@@ -56,7 +56,7 @@ class unidades {
     }
 }
 
-const vehiculos = [{nombre:"Peugeot 308", imagen:"308.jpeg", precio:"$4500", propietario:"Juan Manuel Salinas",contacto:"2613374046"},{nombre:"Toyota Corolla", imagen:"corolla.jpeg", precio:"$5500", propietario:"Rosa Colombo",contacto:"2614375046"},{nombre:"Volkswagen Polo", imagen:"polo.jpeg", precio:"$3900", propietario:"Marcos Acuña",contacto:"2615374456"},{nombre:"Volkswagen Vento", imagen:"vento.jpeg", precio:"$5500",propietario: "María Allianz",contacto:"2616653045"},{nombre:"Nissan Versa", imagen:"versa.jpeg", precio:"$6000", propietario:" Mario Peña",contacto:"2615624145"},{nombre:"Honda HR-V", imagen:"honda.jpeg", precio:"$5800", propietario:" Esteban Pou",contacto:"2617453157"}];
+const vehiculos = [{nombre:"peugeot 308", imagen:"308.jpeg", precio:"$4500", propietario:"Juan Manuel Salinas",contacto:"2613374046"},{nombre:"Toyota Corolla", imagen:"corolla.jpeg", precio:"$5500", propietario:"Rosa Colombo",contacto:"2614375046"},{nombre:"Volkswagen Polo", imagen:"polo.jpeg", precio:"$3900", propietario:"Marcos Acuña",contacto:"2615374456"},{nombre:"Volkswagen Vento", imagen:"vento.jpeg", precio:"$5500",propietario: "María Allianz",contacto:"2616653045"},{nombre:"Nissan Versa", imagen:"versa.jpeg", precio:"$6000", propietario:" Mario Peña",contacto:"2615624145"},{nombre:"Honda HR-V", imagen:"honda.jpeg", precio:"$5800", propietario:" Esteban Pou",contacto:"2617453157"}];
 var contenido = "";
 var i = 1;
 
@@ -64,7 +64,7 @@ for (let modelo of vehiculos) {
     contenido += "<div class='col-3 m-4 d-flex justify-content-center'>";
     contenido += "<div class='card border border-primary'>";
     contenido += "<div><h4 id='modelo_auto" + i + "' class='text-center text-primary fw-bold'>" + modelo.nombre + "</h4></div>";
-    contenido += "<img id='modelo_imagen" + i + "' src='./assets/img/autos/" + modelo.imagen + "' class='card-img-top' alt='" + modelo.nombre + "'>";
+    contenido += "<img id='modelo_imagen" + i + "' src='./assets/img/autos/'" + modelo.imagen + "' class='card-img-top' alt='" + modelo.nombre + "'>";
     contenido += "<div class='card-body'>";
     contenido += "<div class='row'>";
     contenido += "<div class='col-12'><p class='p-1 text-center text-secondary'>El precio por día es de: " +modelo.precio+"</p></div>";
