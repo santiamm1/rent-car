@@ -147,14 +147,14 @@ $(".masAlquilados").prepend('<button type="button" class="btn btn-primary m-5 p-
 $("#boton1").click(() => { 
     $.ajax({
         method: "GET",
-        url:  "./assets/js/datos.json",
+        url:  "../assets/js/datos.json",
         success: function(respuesta) {
             let contenido = "<div id='aviso3' class='d-flex justify-content-center'>";
             
             for (let datos of respuesta) {
                 contenido += "<div class='card m-3 border border-primary'>"
                 contenido += "<div class='text-center text-primary bg-light'><h4>"+datos.nombre+"</h4></div>"
-                contenido += "<img src='./assets/img/autos/" + datos.imagen + "' widht='180'>";
+                contenido += "<img src='../assets/img/autos/" + datos.imagen + "' widht='180'>";
                 contenido += "<div class='text-center text-primary bg-light'><h4>"+datos.precio+" por día"+"</h4></div>"
                 contenido += "<div class='text-center text-secondary bg-light'><h6>"+"Propietario: "+datos.propietario+"</h6></div>"
                 contenido += "</div>"
