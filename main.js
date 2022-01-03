@@ -135,7 +135,7 @@ $("#reserva2").click(function() {
 
 $(`#btnN1`).on('click', function () {
     /* var resultado22 = "<p class='text-white  text-center m-1 p-3'>Gracias por interesarte en nuestras ofertas, HOY tenés un 20% off, tipeando el código 20OFFDAY</p>"; */
-    var resultado22 = "<img src='/assets/img/oferta-autos.png'></img>";
+    var resultado22 = "<img src='./assets/img/oferta-autos.png'></img>";
     document.getElementById("resultadoOferta").innerHTML = resultado22;
 });
 
@@ -147,14 +147,14 @@ $(".masAlquilados").prepend('<button type="button" class="btn btn-primary m-5 p-
 $("#boton1").click(() => { 
     $.ajax({
         method: "GET",
-        url:  "../assets/js/datos.json",
+        url:  "./assets/js/datos.json",
         success: function(respuesta) {
             let contenido = "<div id='aviso3' class='d-flex justify-content-center'>";
             
             for (let datos of respuesta) {
                 contenido += "<div class='card m-3 border border-primary'>"
                 contenido += "<div class='text-center text-primary bg-light'><h4>"+datos.nombre+"</h4></div>"
-                contenido += "<img src='../assets/img/autos/" + datos.imagen + "' widht='180'>";
+                contenido += "<img src='./assets/img/autos/" + datos.imagen + "' widht='180'>";
                 contenido += "<div class='text-center text-primary bg-light'><h4>"+datos.precio+" por día"+"</h4></div>"
                 contenido += "<div class='text-center text-secondary bg-light'><h6>"+"Propietario: "+datos.propietario+"</h6></div>"
                 contenido += "</div>"
